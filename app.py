@@ -3,12 +3,12 @@ import os
 import pandas as pd
 import streamlit as st
 from collections import Counter
-from spotipy import SpotifyException
 import time
 import requests
 from IPython.display import display, Markdown
 
 import spotipy
+from spotipy import SpotifyException
 from spotipy.oauth2 import SpotifyClientCredentials
 from spotipy.oauth2 import SpotifyOAuth
 
