@@ -2,10 +2,8 @@ import streamlit as st
 import os
 import pandas as pd
 import streamlit as st
-from collections import Counter
 import time
-import requests
-from IPython.display import display, Markdown
+
 
 import spotipy
 from spotipy import SpotifyException
