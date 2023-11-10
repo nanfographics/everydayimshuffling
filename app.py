@@ -3,8 +3,6 @@ import os
 import pandas as pd
 import streamlit as st
 import time
-
-
 import spotipy
 from spotipy import SpotifyException
 from spotipy.oauth2 import SpotifyClientCredentials
