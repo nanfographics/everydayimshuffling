@@ -10,8 +10,10 @@ from spotipy.oauth2 import SpotifyOAuth
 
 #Credentials
 #Spotify API credentials
-CLIENT_ID = '<INSERT ID>'
-CLIENT_SECRET = '<INSERT SECRET>'
+# CLIENT_ID = '<INSERT ID>'
+# CLIENT_SECRET = '<INSERT SECRET>'
+CLIENT-ID = os.getenv('SPOTIPY_CLIENT_ID')
+CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
 port = int(os.environ.get('PORT', 8888))
 redirect_uri = f'http://localhost:{port}/callback'
 
