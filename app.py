@@ -15,7 +15,7 @@ from spotipy.oauth2 import SpotifyOAuth
 CLIENT-ID = st.secrets["CLIENT_ID"]
 CLIENT_SECRET = st.secrets["CLIENT_SECRET"]
 port = int(os.environ.get('PORT', 8888))
-redirect_uri = f'http://localhost:{port}/callback'
+redirect_uri = f'https://share.streamlit.io/nanfographics/pyotr-playlist'
 
 # Authenticate with Spotify
 sp_oauth = SpotifyOAuth(client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri=redirect_uri, scope='user-read-private user-top-read')
